@@ -63,11 +63,11 @@ function calcularDesconto(valorProduto,porcentagemDesconto) {
     alert(`o valor do produto agora é de ${valorProduto+desconto} sendo o desconto de ${desconto}`)
 }
 
-maiorDeIdade(18);
-calculoImc(70 , 1.80);
-conversãoMoeda(10.00);
-pegarDoEstoque();
-médiaPonderada(5,10,8);
-exibirLista(listaCompras);
-verificarLogin(login,loginPredefinido,senha,senhaPreDefinida);
-calcularDesconto(valorProduto,porcentagemDesconto);
+alert(maiorDeIdade());
+alert(calculoImc());
+alert(conversãoMoeda());
+alert(pegarDoEstoque());
+alert(médiaPonderada());
+alert(exibirLista());
+alert(verificarLogin());
+alert(calcularDesconto());
