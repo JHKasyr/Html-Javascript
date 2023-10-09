@@ -11,4 +11,3 @@ let imc = peso / (altura*altura);
 console.log("seu imc é de "+imc);
 
 let real = prompt("insira o valor em reais");
-let cambio = real*

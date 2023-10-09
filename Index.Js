@@ -24,60 +24,58 @@ let peso3 = Number(prompt("qual o peso de sua terceira prova ?"))
 let valorProduto = Number(prompt("qual o valor do produto desejado"));
 let porcentagemDesconto = Number(prompt("qual a porcentagem de desconto do produto ?"));
 
-
     if (idade > 17) {
-        return alert(`entrada liberada`);
+        alert(`entrada liberada`);
     }
     else {
-        return alert(`entrada negada`)
+        alert(`entrada negada`);
+    }
     
-} function calculoImc() {
+ function calculoImc() {
 
     let imc = (peso / (altura * altura));
-    return alert(`seu imc é de ${imc}`);
+    alert(`seu imc é de ${imc}`);
 }
 
 function conversãoMoeda() {
     let cambio = real / 5.15 //cotação de 6/10
 
-    return alert(`seu suado dinheiro valerá ${cambio} neste maldito pais imperialista `);
+    alert(`seu suado dinheiro valerá ${cambio} neste maldito pais imperialista `);
 }
 
 function pegarDoEstoque() {
     estoque - 1;
     if (estoque > 0) {
-        return alert(`produto pego com sucesso`);
+        alert(`produto pego com sucesso`);
     }
     if (estoque <= 0) {
-        return alert(`produto indisponivel`);
+        alert(`produto indisponivel`);
     }
 }
 
 function médiaPonderada() {
-   return alert(`a sua média é de ${((prova1*peso1) + (prova2*peso2) + (peso3*prova3)) / (peso1*peso2*peso3)}`)
+alert(`a sua média é de ${((prova1*peso1) + (prova2*peso2) + (peso3*prova3)) / (peso1*peso2*peso3)}`)
 }
 function exibirLista() {
-   return alert(`sua lista de compras é ${listaCompras}`);
+alert(`sua lista de compras é ${listaCompras}`);
 }
 function verificarLogin() {
-
     if (loginPredefinido != login && senha != senhaPreDefinida) {
-       return alert(`acesso negado;`)
+    alert(`acesso negado;`)
     } else {
-       return alert(`acesso liberado`)
+    alert(`acesso liberado`)
     }
 }
 function calcularDesconto() {
     
     let desconto = (porcentagemDesconto/100)*valorProduto;
-    return alert(`o valor do produto agora é de ${valorProduto-desconto} sendo o desconto de ${desconto}`)
+    alert(`o valor do produto agora é de ${valorProduto-desconto} sendo o desconto de ${desconto}`)
 }
 
-maiorDeIdade();
-calculoImc();
-conversãoMoeda();
-pegarDoEstoque();
-médiaPonderada();
-exibirLista();
-verificarLogin();
-calcularDesconto();
+alert(calculoImc());
+alert(conversãoMoeda());
+alert(pegarDoEstoque());
+alert(médiaPonderada());
+alert(exibirLista());
+alert(verificarLogin());
+alert(calcularDesconto());
